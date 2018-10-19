@@ -1,0 +1,8 @@
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `main':
+move_base_node.cpp:(.text+0x11c): undefined reference to `YAML::Parser::Parser(std::istream&)'
+move_base_node.cpp:(.text+0x260): undefined reference to `YAML::Parser::~Parser()'
+move_base_node.cpp:(.text+0x379): undefined reference to `YAML::Parser::~Parser()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/pradheep/neo_int_ws/devel/.private/neo_int_ws/lib/neo_int_ws/move_base] Error 1
+make[1]: *** [CMakeFiles/move_base.dir/all] Error 2
+make: *** [all] Error 2

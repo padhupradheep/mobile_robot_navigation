@@ -1,0 +1,6 @@
+devel_space: /home/pradheep/neo_int_ws/devel
+install: false
+install_space: /home/pradheep/neo_int_ws/install
+profile: default
+source_space: /home/pradheep/neo_int_ws/src
+workspace: /home/pradheep/neo_int_ws

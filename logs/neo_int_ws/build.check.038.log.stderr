@@ -1,0 +1,4 @@
+CMake Error: Error in cmake code at
+/home/pradheep/neo_int_ws/src/neo_robot/CMakeLists.txt:55:
+Parse error.  Function missing ending ")".  End of file reached.
+make: *** [cmake_check_build_system] Error 1

@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/pradheep/neo_int_ws/src/neo_robot/CMakeLists.txt:31 (target_link_libraries):
+  Cannot specify link libraries for target "neo_int_ws" which is not built by
+  this project.
+
+
+make: *** [cmake_check_build_system] Error 1

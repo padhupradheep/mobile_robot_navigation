@@ -1,0 +1,7 @@
+[01m[K/home/pradheep/neo_int_ws/src/neo_robot/scripts/move_base_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pradheep/neo_int_ws/src/neo_robot/scripts/move_base_node.cpp:25:4:[m[K [01;31m[Kerror: [m[K‘[01m[Ksum[m[K’ was not declared in this scope
+    sum += static_cast<double>(my_list[i]);
+[01;32m[K    ^[m[K
+make[2]: *** [CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move_base.dir/all] Error 2
+make: *** [all] Error 2

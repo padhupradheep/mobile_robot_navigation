@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- upload parameters -->
+    <node pkg="neo_int_ws" type="move_base"  name="move_base_node" output="screen">
+    <rosparam command="load" file="$(find neo_int_ws)/launch/goals.yaml"/>
+
+   	</node>
+</launch>
+

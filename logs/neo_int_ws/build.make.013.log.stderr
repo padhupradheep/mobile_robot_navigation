@@ -1,0 +1,22 @@
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `main':
+move_base_node.cpp:(.text+0x12d): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+move_base_node.cpp:(.text+0x1d3): undefined reference to `YAML::operator<<(std::ostream&, YAML::Node const&)'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::memory_holder::create_node()':
+move_base_node.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x1c): undefined reference to `YAML::detail::memory::create_node()'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::node_ref::mark_defined()':
+move_base_node.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x1c): undefined reference to `YAML::detail::node_data::mark_defined()'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::node_ref::set_null()':
+move_base_node.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x1c): undefined reference to `YAML::detail::node_data::set_null()'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+move_base_node.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x2a): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::Node::Scalar[abi:cxx11]() const':
+move_base_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x64): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::node& YAML::detail::node_data::get<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, boost::shared_ptr<YAML::detail::memory_holder>)':
+move_base_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE]+0xbd): undefined reference to `YAML::detail::node_data::convert_to_map(boost::shared_ptr<YAML::detail::memory_holder>)'
+move_base_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE]+0x227): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o: In function `YAML::detail::node& YAML::detail::node_data::convert_to_node<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, boost::shared_ptr<YAML::detail::memory_holder>)':
+move_base_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE[_ZN4YAML6detail9node_data15convert_to_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_N5boost10shared_ptrINS0_13memory_holderEEE]+0x65): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/pradheep/neo_int_ws/devel/.private/neo_int_ws/lib/neo_int_ws/move_base] Error 1
+make[1]: *** [CMakeFiles/move_base.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,12 @@
+[01m[K/home/pradheep/neo_int_ws/src/neo_robot/scripts/move_base_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pradheep/neo_int_ws/src/neo_robot/scripts/move_base_node.cpp:18:47:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst string& {aka const std::__cxx11::basic_string<char>&}[m[K’ from expression of type ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’
+     YAML::Node doc = YAML::LoadAllFromFile(fin);
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/yaml-cpp/yaml.h:21:0[m[K,
+                 from [01m[K/home/pradheep/neo_int_ws/src/neo_robot/scripts/move_base_node.cpp:7[m[K:
+[01m[K/usr/include/yaml-cpp/node/parse.h:27:32:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kstd::vector<YAML::Node> YAML::LoadAllFromFile(const string&)[m[K’
+ YAML_CPP_API std::vector<Node> LoadAllFromFile(const std::string& filename);
+[01;32m[K                                ^[m[K
+make[2]: *** [CMakeFiles/move_base.dir/scripts/move_base_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move_base.dir/all] Error 2
+make: *** [all] Error 2
