@@ -6,15 +6,15 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   interactive_markers
   std_msgs
+  nav_msgs
+  move_base_msgs
 )
 
 include($ENV{ROS_ROOT}/core/rosbuild/FindPkgConfig.cmake)
 
 catkin_package(
  INCLUDE_DIRS include
- CATKIN_DEPENDS geometry_msgs roscpp std_msgs
-   trajectory_msgs
-   sensor_msgs
+ CATKIN_DEPENDS geometry_msgs roscpp std_msgs nav_msgs move_base_msgs
  #DEPENDS system_lib
 )
 

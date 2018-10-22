@@ -1,8 +1,0 @@
-prefix=/home/pradheep/neo_int_ws/install
-
-Name: neo_int_ws
-Description: Description of neo_int_ws
-Version: 0.0.0
-Cflags: -I/home/pradheep/neo_int_ws/install/include
-Libs: -L/home/pradheep/neo_int_ws/install/lib 
-Requires: geometry_msgs roscpp std_msgs trajectory_msgs sensor_msgs

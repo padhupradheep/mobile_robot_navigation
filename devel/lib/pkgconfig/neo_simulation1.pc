@@ -1,0 +1,8 @@
+prefix=/home/pradheep/neo_int_ws/devel
+
+Name: neo_simulation1
+Description: Description of neo_simulation1
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/pradheep/neo_int_ws/devel/lib 
+Requires: 

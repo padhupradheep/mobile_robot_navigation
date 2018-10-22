@@ -1,0 +1,2 @@
+fake_localization:neo_robot
+-DCATKIN_DEVEL_PREFIX=/home/pradheep/neo_int_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pradheep/neo_int_ws/install -G Unix Makefiles
