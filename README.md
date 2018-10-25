@@ -16,7 +16,7 @@ There are 2 nodes available
 
 Run 
 
-####roscore
+#### roscore
 
 Run the husky gazebo simulation, which brings up all the required components.
 
@@ -24,14 +24,14 @@ Run the husky gazebo simulation, which brings up all the required components.
 
 Now bring up the move_base
 
-####roslaunch husky_navigation move_base.launch 
+#### roslaunch husky_navigation move_base.launch 
 
 Now bring up the amcl for the localization of the robot. (Map -> base_link transformation)
  
- ####roslaunch husky_navigation amcl.launch
+ #### roslaunch husky_navigation amcl.launch
  
 Now run the node that was developed
 
-####roslaunch neo_int_ws move_robot.launch
+#### roslaunch neo_int_ws move_robot.launch
  
 Incase if you want to change the goal positions, change the goals.yaml file in the configuration folder.
