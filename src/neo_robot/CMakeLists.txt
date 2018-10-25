@@ -7,6 +7,7 @@ find_package(catkin REQUIRED COMPONENTS
   interactive_markers
   std_msgs
   nav_msgs
+  tf
   move_base_msgs
 )
 
@@ -14,7 +15,7 @@ include($ENV{ROS_ROOT}/core/rosbuild/FindPkgConfig.cmake)
 
 catkin_package(
  INCLUDE_DIRS include
- CATKIN_DEPENDS geometry_msgs roscpp std_msgs nav_msgs move_base_msgs
+ CATKIN_DEPENDS geometry_msgs roscpp std_msgs nav_msgs move_base_msgs tf
  #DEPENDS system_lib
 )
 
@@ -24,7 +25,6 @@ include_directories(
 )
 
 add_executable(move_base
-    #src/visualise_goal.cpp
     scripts/move_base_node.cpp
 )
 
@@ -36,9 +36,46 @@ add_dependencies(move_base
   ${catkin_EXPORTED_TARGETS}
 )
 
+add_executable(distance_calc_node
+    scripts/distance_calc_node.cpp
+)
+
+target_link_libraries(distance_calc_node
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(distance_calc_node
+  ${catkin_EXPORTED_TARGETS}
+)
+
+add_executable(map_transform
+    scripts/map_baselink_transform.cpp
+)
+
+target_link_libraries(map_transform
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(map_transform
+  ${catkin_EXPORTED_TARGETS}
+)
+
+add_executable(odom_transform
+    scripts/tf_odom_baselink.cpp
+)
+
+target_link_libraries(odom_transform
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(odom_transform
+  ${catkin_EXPORTED_TARGETS}
+)
+
 install(
   TARGETS
    move_base
+   distance_calc_node
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
