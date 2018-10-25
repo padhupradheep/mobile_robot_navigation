@@ -1,7 +1,5 @@
 # mobile_robot_navigation
 
-# mobile_robot_navigation
-
 This is a simple implementation of move_base sending multiple goals.
 ROS Distro : Kinetic
 
