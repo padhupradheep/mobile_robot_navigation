@@ -14,13 +14,13 @@ There are 2 nodes available
   1. Performing the basic move_base operation and reaching the goal.
   2. Calculating the distance travelled.
 
-Run 
+Open the terminal, Run
 
 #### roscore
 
 Run the husky gazebo simulation, which brings up all the required components.
 
-####roslaunch husky_gazebo husky_playpen.launch 
+#### roslaunch husky_gazebo husky_playpen.launch 
 
 Now bring up the move_base
 
@@ -28,7 +28,12 @@ Now bring up the move_base
 
 Now bring up the amcl for the localization of the robot. (Map -> base_link transformation)
  
- #### roslaunch husky_navigation amcl.launch
+#### roslaunch husky_navigation amcl.launch
+
+Now bringup the visualizer in a seperate terminal
+
+#### rviz
+change the global frame to /map and add the ### map from the add option available in the visualizer 
  
 Now run the node that was developed
 
