@@ -33,7 +33,7 @@ Now bring up the amcl for the localization of the robot. (Map -> base_link trans
 Now bringup the visualizer in a seperate terminal
 
 #### rviz
-change the global frame to /map and add the map from the add option available in the visualizer 
+change the topic of global frame to /map and add the map from the add option available in the visualizer 
  
 Now run the node that was developed
 
